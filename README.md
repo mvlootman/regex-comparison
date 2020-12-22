@@ -5,7 +5,7 @@ Each found number was summed up to receive a total of all the iterations, to val
 These result show elapsed time for just a single regular expression example, so please do not take the numbers as a benchmark of the different languages/options.
 
 | option        | time   | version           | mem. bytes (max.resident set size)|mem. bytes(peak memory footprint)|bin.size|remarks|
-|---------------|--------|-------------------|-------------------------------------|-----------------------------------|-------|--------|
+|---------------|-------:|-------------------|------------------------------------:|----------------------------------:|------:|--------|
 | PyPy          |  6.42s| 7.3.1 with GCC    |41.349.120|-||
 | V (pcre)      |  7.66s| 0.1.30 (b16052d)  | 1.147.334.656|1.300.987.904|35KB|compiled with -prod|
 | Crystal  |  8.77s| 0.35.1 (LLVM 9.0.1)  | 3.235.840|2.342.912|403KB|compiled with --release|
