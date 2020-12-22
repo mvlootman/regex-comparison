@@ -1,20 +1,3 @@
-# regex-comparison
-extremely basic comparison of regex in different languages.
-Performed the following regular expression `'\d+'` on 100 lines of text (each containing text and 4 numbers). This was repeated 100.000 times.
-Each found number was summed up to receive a total of all the iterations, to validate result.
-These result show elapsed time for just a single regular expression example, so please do not take the numbers as a benchmark of the different languages/options.
-
-| option        | bin. size | time   | version           | remarks
-|---------------|-----------|--------|-------------------|-------------------|
-| PyPy          |  -        |  6.356s| 7.3.1 with GCC    |
-| V (pcre)      | 35KB      |  7.721s| 0.1.30 (b47daad)  | compiled with -prod 
-| Go            | 2.4MB     | 11.870s| 1.15.5            |
-| V (regex)     | 65KB      | 21.759s| 0.1.30 (b47daad)  | compiled with -prod
-| Python        |  -        | 26.211s| 3.8.2             |               
-
-
-## V (regex) code used
-```V
 import regex
 
 const (
@@ -135,7 +118,12 @@ fn main() {
 		}
 	}
 	println(total)
+	// println('$input => idxs:$idxs') // idxs:[0, 1]
 }
 // 21159000000
+// 65K Dec 22 08:12 regex_digit
+
+// Current V version:
+// V 0.1.30 b47daad, timestamp: 2020-12-22 08:32:32 +0100
 // ./regex_digit  20.68s user 0.91s system 99% cpu 21.759 total
-```
+// ./regex_digit  20.35s user 0.82s system 99% cpu 21.195 total
