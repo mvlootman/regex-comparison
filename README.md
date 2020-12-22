@@ -4,13 +4,15 @@ Performed the following regular expression `'\d+'` on 100 lines of text (each co
 Each found number was summed up to receive a total of all the iterations, to validate result.
 These result show elapsed time for just a single regular expression example, so please do not take the numbers as a benchmark of the different languages/options.
 
-| option        | time   | version           | memory bytes (peak usage)|bin.size|remarks|
-|---------------|--------|-------------------|--------------------------|--------|-------|
+| option        | time   | version           | mem. bytes (max.resident set size)|mem. bytes(peak memory footprint)|bin.size|remarks|
+|---------------|--------|-------------------|-------------------------------------|-----------------------------------|-------|--------|
 | PyPy          |  6.42s| 7.3.1 with GCC    |41.349.120|-||
-| V (pcre)      |  7.66s| 0.1.30 (b16052d)  | 1.301.577.728|35KB|compiled with -prod|
-| Go            | 12.620s| 1.15.5            |10.723.328|2.4MB | |
-| V (regex)     | 20.00s| 0.1.30 (b16052d)  | 3.170.918.400 | 65KB | compiled with -prod
+| V (pcre)      |  7.66s| 0.1.30 (b16052d)  | 1.147.334.656|1.300.987.904|35KB|compiled with -prod|
+| Go            | 12.620s| 1.15.5            |10.051.584|7.196.672|2.4MB | |
+| V (regex)     | 21.08s| 0.1.30 (b16052d)  | 1.725.280.256 |3.170.480.128|  65KB | compiled with -prod
+| V (regex) AF  | 21.76s| 0.1.30 (b16052d)  |1.951.686.656 | 1.951.215.616| 65KB | compiled with -prod -autofree|
 | Python        | 28.72s| 3.8.2             | 6.991.872 |- |..|               
+
 
 
 

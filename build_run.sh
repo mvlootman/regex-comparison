@@ -10,6 +10,7 @@ go build -o ./code/bin/re_digit ./code/re_digit.go
 echo 'build V pcre'
 v -prod ./code/pcre_digit.v -o ./code/bin/v_pcre
 v -prod ./code/regex_digit.v -o ./code/bin/v_regex
+v -prod -autofree ./code/regex_digit.v -o ./code/bin/v_regex_autofree
 echo 'build Crystal (todo)'
 #crystal ...
 
@@ -20,6 +21,8 @@ echo 'time V (pcre)'
 /usr/bin/time -l ./code/bin/v_pcre
 echo 'time V (regex)'
 /usr/bin/time -l ./code/bin/v_regex
+echo 'time V (regex) autofree'
+/usr/bin/time -l ./code/bin/v_regex_autofree
 echo 'time Python'
 /usr/bin/time -l python ./code/pypy_digit.py 
 echo 'time PyPy'
