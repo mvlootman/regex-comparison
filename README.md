@@ -6,11 +6,13 @@ These result show elapsed time for just a single regular expression example, so 
 
 | option        | time   | version           | mem. bytes (max.resident set size)|mem. bytes(peak memory footprint)|bin.size|remarks|
 |---------------|-------:|-------------------|------------------------------------:|----------------------------------:|------:|--------|
-| PyPy          |  6.42s| 7.3.1 with GCC    |41.349.120|-||
+| PyPy          |  6.42s| 7.3.1 with GCC    |41.349.120|34.197.504|-||
 | V (pcre)      |  7.66s| 0.1.30 (b16052d)  | 1.147.334.656|1.300.987.904|35KB|compiled with -prod|
 | Crystal  |  8.77s| 0.35.1 (LLVM 9.0.1)  | 3.235.840|2.342.912|403KB|compiled with --release|
-| Go            | 12.620s| 1.15.5            |10.051.584|7.196.672|2.4MB | |
-| V (regex)     | 21.08s| 0.1.30 (b16052d)  | 1.725.280.256 |3.170.480.128|  65KB | compiled with -prod
+| Go            | 11.800s| 1.15.5            |10.051.584|7.196.672|2.4MB | |
+| V (pcre) AF     |  14.08s| 0.1.30 (b16052d)  | 3.577.487.360|3.576.897.536|35KB|compiled with -prod -autofree|
+
+| V (regex)     | 20.31s| 0.1.30 (b16052d)  | 3.170.934.784 |3.170.463.744|  65KB | compiled with -prod
 | V (regex) AF  | 21.76s| 0.1.30 (b16052d)  |1.951.686.656 | 1.951.215.616| 65KB | compiled with -prod -autofree|
 | Python        | 28.72s| 3.8.2             | 6.991.872 |- |..|               
 

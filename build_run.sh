@@ -12,7 +12,7 @@ v -prod ./code/pcre_digit.v -o ./code/bin/v_pcre
 v -prod -autofree ./code/pcre_digit.v -o ./code/bin/v_pcre_autofree
 v -prod ./code/regex_digit.v -o ./code/bin/v_regex
 v -prod -autofree ./code/regex_digit.v -o ./code/bin/v_regex_autofree
-echo 'build Crystal (todo)'
+echo 'build Crystal'
 crystal build ./code/crystal_digit.cr --release --no-debug -o ./code/bin/crystal_digit
 #crystal ...
 
