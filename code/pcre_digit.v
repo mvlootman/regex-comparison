@@ -123,7 +123,7 @@ fn main() {
 		}
 	}
 	println(total)
-
+}
 // 21159000000
 // 35K Dec 22 11:03 pcre_digit
 // Current V version:

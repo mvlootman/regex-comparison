@@ -4,13 +4,14 @@ Performed the following regular expression `'\d+'` on 100 lines of text (each co
 Each found number was summed up to receive a total of all the iterations, to validate result.
 These result show elapsed time for just a single regular expression example, so please do not take the numbers as a benchmark of the different languages/options.
 
-| option        | bin. size | time   | version           | remarks
-|---------------|-----------|--------|-------------------|-------------------|
-| PyPy          |  -        |  6.356s| 7.3.1 with GCC    |
-| V (pcre)      | 35KB      |  7.721s| 0.1.30 (b47daad)  | compiled with -prod 
-| Go            | 2.4MB     | 11.870s| 1.15.5            |
-| V (regex)     | 65KB      | 21.759s| 0.1.30 (b47daad)  | compiled with -prod
-| Python        |  -        | 26.211s| 3.8.2             |               
+| option        | time   | version           | memory bytes (peak usage)|bin.size|remarks|
+|---------------|--------|-------------------|--------------------------|--------|-------|
+| PyPy          |  6.42s| 7.3.1 with GCC    |41.349.120|-||
+| V (pcre)      |  7.60s| 0.1.30 (b47daad)  | 1.301.577.728|35KB|compiled with -prod|
+| Go            | 12.620s| 1.15.5            |10.723.328|2.4MB | |
+| V (regex)     | 22.28s| 0.1.30 (b47daad)  | 3.170.934.784 | 65KB | compiled with -prod
+| Python        | 28.72s| 3.8.2             | 6.991.872 |- |..|               
+
 
 
 ## V (regex) code used
