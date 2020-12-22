@@ -118,7 +118,6 @@ fn main() {
 		}
 	}
 	println(total)
-	// println('$input => idxs:$idxs') // idxs:[0, 1]
 }
 // 21159000000
 // 65K Dec 22 08:12 regex_digit
