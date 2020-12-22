@@ -7,9 +7,9 @@ These result show elapsed time for just a single regular expression example, so 
 | option        | time   | version           | memory bytes (peak usage)|bin.size|remarks|
 |---------------|--------|-------------------|--------------------------|--------|-------|
 | PyPy          |  6.42s| 7.3.1 with GCC    |41.349.120|-||
-| V (pcre)      |  7.60s| 0.1.30 (b47daad)  | 1.301.577.728|35KB|compiled with -prod|
+| V (pcre)      |  7.66s| 0.1.30 (b16052d)  | 1.301.577.728|35KB|compiled with -prod|
 | Go            | 12.620s| 1.15.5            |10.723.328|2.4MB | |
-| V (regex)     | 22.28s| 0.1.30 (b47daad)  | 3.170.934.784 | 65KB | compiled with -prod
+| V (regex)     | 20.00s| 0.1.30 (b16052d)  | 3.170.918.400 | 65KB | compiled with -prod
 | Python        | 28.72s| 3.8.2             | 6.991.872 |- |..|               
 
 
