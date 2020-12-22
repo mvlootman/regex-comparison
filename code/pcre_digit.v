@@ -123,6 +123,7 @@ fn main() {
 		}
 	}
 	println(total)
+	re.free()
 }
 // 21159000000
 // 35K Dec 22 11:03 pcre_digit
