@@ -13,6 +13,7 @@ v -prod -autofree ./code/pcre_digit.v -o ./code/bin/v_pcre_autofree
 v -prod ./code/regex_digit.v -o ./code/bin/v_regex
 v -prod -autofree ./code/regex_digit.v -o ./code/bin/v_regex_autofree
 echo 'build Crystal (todo)'
+crystal build ./code/crystal_digit.cr --release --no-debug -o ./code/bin/crystal_digit
 #crystal ...
 
 # time
@@ -31,8 +32,8 @@ echo 'time Python'
 /usr/bin/time -l python ./code/pypy_digit.py 
 echo 'time PyPy'
 /usr/bin/time -l pypy ./code/pypy_digit.py 
-
-#echo 'time Crystal'
+echo 'time Crystal'
+/usr/bin/time -l ./code/bin/crystal_digit
 
 # size of binaries
 ls -lah ./code/bin/
@@ -42,3 +43,4 @@ python --version
 pypy --version
 v -version
 go version
+crystal version
