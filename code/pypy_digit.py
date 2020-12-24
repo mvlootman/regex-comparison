@@ -114,8 +114,3 @@ for _ in range(0, 100000):
 print(total)
 
 # 21159000000
-# python   26.16s user 0.02s system 99% cpu 26.211 total
-
-# 21159000000
-# pypy ./pypy_digit.py  6.31s user 0.04s system 99% cpu 6.356 total
-# pypy ./pypy_digit.py  6.28s user 0.04s system 99% cpu 6.321 total

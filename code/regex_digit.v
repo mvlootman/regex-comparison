@@ -111,18 +111,12 @@ fn main() {
 	mut total := u64(0)
 	for _ in 0 .. 100000 {
 		for input in inputs {
-			idxs := re.find_all(input)
-			for i := 0; i < idxs.len; i += 2 {
-				total += input[idxs[i]..idxs[i + 1]].u64()
+			nums := re.find_all_str(input)
+			for n in nums{
+				total += n.u64()
 			}
 		}
 	}
 	println(total)
 }
 // 21159000000
-// 65K Dec 22 08:12 regex_digit
-
-// Current V version:
-// V 0.1.30 b47daad, timestamp: 2020-12-22 08:32:32 +0100
-// ./regex_digit  20.68s user 0.91s system 99% cpu 21.759 total
-// ./regex_digit  20.35s user 0.82s system 99% cpu 21.195 total

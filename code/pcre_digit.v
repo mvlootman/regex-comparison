@@ -126,8 +126,3 @@ fn main() {
 	re.free()
 }
 // 21159000000
-// 35K Dec 22 11:03 pcre_digit
-// Current V version:
-// V 0.1.30 b47daad, timestamp: 2020-12-22 08:32:32 +0100
-// ./pcre_digit  7.26s user 0.37s system 98% cpu 7.721 total
-// ./pcre_digit  7.23s user 0.38s system 99% cpu 7.617 total

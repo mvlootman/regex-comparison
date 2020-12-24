@@ -124,6 +124,3 @@ func main() {
 	fmt.Println(total) // [43 237 251 961]
 }
 //211590000
-// 2.4M Dec 22 08:23 re_digit
-// ./re_digit  11.93s user 0.25s system 102% cpu 11.867 total
-// ./re_digit  12.13s user 0.25s system 104% cpu 11.870 total
