@@ -102,7 +102,7 @@ inputs = [
 ]
 result = 0_i64
 re = /\d+/
-(0..100_000).each do
+(1..100_000).each do
   inputs.each do |input|
     nums = input.scan(re).map(&.[0].to_i)
     nums.each { |n| result += n }
